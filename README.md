@@ -11,11 +11,11 @@ This is your SwiftUI view.
 This is a class that inherits from ObservableObject.
 * It can be used to notify your view when data values change.
 * When data changes, your view will update.
-* Data can be simple, like a string or int. Data can also be an object, like a struct or class.
+* Data can be simple, like a string or int. Data can also be an object, like a struct.
 
 
 # DO is for Data Object
-This is a struct or class that holds data.
+This is usually a structthat holds data.
 * You can have one data object in your ObservableObject.
 * You can have an array of data objects in your ObservableObject.
 * Your ObservableObject can send data objects to your view to be displayed.
