@@ -71,6 +71,6 @@ struct DataObject: Identifiable {
 ```
 
 ### Preview
-![preview](https://user-images.githubusercontent.com/24855856/125718148-19cc3174-76db-4d1b-88b8-3eec431f2ef9.png)
+![preview](https://user-images.githubusercontent.com/24855856/125718528-5d02b7aa-0691-4bf3-b600-04fc3a35d5f0.png)
 
 
