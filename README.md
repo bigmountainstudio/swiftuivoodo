@@ -1,4 +1,4 @@
-![header](https://user-images.githubusercontent.com/24855856/125707312-e36cb673-6c42-4d21-94a2-59028d3d14b0.png)
+![header](https://user-images.githubusercontent.com/24855856/125718166-b660e276-da1f-43f7-999f-fec5e5c54410.png)
 
 
 # Separated Simply
@@ -69,3 +69,8 @@ struct DataObject: Identifiable {
     var name: String
 }
 ```
+
+### Preview
+![preview](https://user-images.githubusercontent.com/24855856/125718148-19cc3174-76db-4d1b-88b8-3eec431f2ef9.png)
+
+
