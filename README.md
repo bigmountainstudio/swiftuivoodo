@@ -33,7 +33,7 @@ This is usually a struct that holds data.
 ------------
 
 # Code Example
-## View
+### View
 ```swift
 struct SettingsView: View {
     @StateObject private var oo = SettingsOO()
@@ -49,7 +49,7 @@ struct SettingsView: View {
 }
 ```
 
-## Observable Object
+### Observable Object
 ```swift
 class SettingsOO: ObservableObject {
     @Published var data: [DataObject] = []
@@ -62,7 +62,7 @@ class SettingsOO: ObservableObject {
 }
 ```
 
-## Data Object
+### Data Object
 ```swift
 struct DataObject: Identifiable {
     let id = UUID()
@@ -75,7 +75,11 @@ struct DataObject: Identifiable {
 
 ------------
 # Resources
-## Working with Data in SwiftUI
+### Working with Data in SwiftUI
 ![working with data in swiftui](https://user-images.githubusercontent.com/24855856/125804293-5f4ec808-220d-41a7-b1ce-9caebc06069e.png)
 [Learn More](https://www.bigmountainstudio.com/data)
 
+### Xcode File Template
+This file template will create all 3 classes when you add a new SwiftUI view to your project.
+(Note: All 3 objects will be in one file. Delete what you don't need and separate out what you want.)
+[Download Here](https://github.com/bigmountainstudio/swiftuivoodo/tree/main/VOODO%20File%20Template)
