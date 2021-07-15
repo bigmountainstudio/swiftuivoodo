@@ -25,7 +25,7 @@ This is a class that inherits from ObservableObject.
 
 
 # DO is for Data Object
-This is usually a structthat holds data.
+This is usually a struct that holds data.
 * You can have one data object in your ObservableObject.
 * You can have an array of data objects in your ObservableObject.
 * Your ObservableObject can send data objects to your view to be displayed.
