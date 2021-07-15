@@ -71,6 +71,11 @@ struct DataObject: Identifiable {
 ```
 
 ### Preview
-![preview](https://user-images.githubusercontent.com/24855856/125718528-5d02b7aa-0691-4bf3-b600-04fc3a35d5f0.png)
+![preview](https://user-images.githubusercontent.com/24855856/125803759-38e60661-f754-48dc-8b29-ecae855c0e74.png)
 
+------------
+# Resources
+## Working with Data in SwiftUI
+![working with data in swiftui](https://user-images.githubusercontent.com/24855856/125804293-5f4ec808-220d-41a7-b1ce-9caebc06069e.png)
+[Learn More](https://www.bigmountainstudio.com/data)
 
