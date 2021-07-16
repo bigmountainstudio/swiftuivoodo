@@ -1,14 +1,15 @@
 ![header](https://user-images.githubusercontent.com/24855856/125718166-b660e276-da1f-43f7-999f-fec5e5c54410.png)
 
 
-# Separated Simply
+# Simply Separated
 There are only 3 parts:
 1. View
 2. ObservableObject
 3. DataObject
 
 Not all are required.
-And you can expand beyond these 3.
+And you can expand beyond these 3 for your apps needs.
+Strive for simplicity.
 
 # V is for View
 This is your SwiftUI view.
