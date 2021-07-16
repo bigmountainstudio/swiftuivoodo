@@ -87,4 +87,4 @@ struct DataObject: Identifiable {
 
 This file template will create all 3 classes when you add a new SwiftUI view to your project.
 (Note: All 3 objects will be in one file. Delete what you don't need and separate out what you want.)
-[Download Here](https://github.com/bigmountainstudio/swiftuivoodo/tree/main/VOODO%20File%20Template)
+[Download Here](https://github.com/bigmountainstudio/VOODOFileTemplate)
