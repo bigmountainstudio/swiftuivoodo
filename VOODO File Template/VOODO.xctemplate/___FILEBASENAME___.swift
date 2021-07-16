@@ -23,25 +23,24 @@ struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
         ___FILEBASENAMEASIDENTIFIER___View()
     }
 }
-
 // Observable Object
 import Combine
 import SwiftUI
 
 class ___FILEBASENAMEASIDENTIFIER___OO: ObservableObject {
-    @Published var data: [DataObject] = []
+    @Published var data: [___FILEBASENAMEASIDENTIFIER___DO] = []
     
     func fetch() {
-        data = [DataObject(name: "Datum 1"),
-                DataObject(name: "Datum 2"),
-                DataObject(name: "Datum 3")]
+        data = [___FILEBASENAMEASIDENTIFIER___DO(name: "Datum 1"),
+                ___FILEBASENAMEASIDENTIFIER___DO(name: "Datum 2"),
+                ___FILEBASENAMEASIDENTIFIER___DO(name: "Datum 3")]
     }
 }
 
 // Data Object
 import Foundation
 
-struct DataObject: Identifiable {
+struct ___FILEBASENAMEASIDENTIFIER___DO: Identifiable {
     let id = UUID()
     var name: String
 }
