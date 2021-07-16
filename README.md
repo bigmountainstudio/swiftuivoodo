@@ -77,7 +77,10 @@ struct DataObject: Identifiable {
 ------------
 # Resources
 ### Working with Data in SwiftUI
+Learn more about this architecture and working with data in the book **Working with Data in SwiftUI**.
+
 ![working with data in swiftui](https://user-images.githubusercontent.com/24855856/125804293-5f4ec808-220d-41a7-b1ce-9caebc06069e.png)
+
 [Learn More](https://www.bigmountainstudio.com/data)
 
 
