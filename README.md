@@ -74,6 +74,51 @@ struct DataObject: Identifiable {
 ### Preview
 ![preview](https://user-images.githubusercontent.com/24855856/125803759-38e60661-f754-48dc-8b29-ecae855c0e74.png)
 
+# Important Notes
+### You are in control!
+* You decide on the naming convention you want to use.
+    * You can update the Xcode file template below to fit your needs.
+* You decide how simple or how complex this needs to be.
+    * Don't need the Data Object? Delete it!
+    * Want to put the observable object and view in the same file? Go for it!
+    * Want all 3 in separate files but the same folder? Why not?
+
+### How is this different from other architectures?
+The goal of architecture is to make your life (or your team's life) easier.
+If this is not happening, then your architecture has failed.
+
+#### This architecture is meant to:
+* Provide a starting point
+* Be flexible
+* Be as simple or as complicated as you need
+* Have fewer rules
+* Allow the developer to use their judgment
+* Grow with your project. Let's talk about that...
+
+## Grow With Your Project - Example 1
+1. Minimum Viable Project
+    1. Maybe you used that Xcode file template below and your view, observable object, and data object are in one file. Simple.
+    1. You present your minimum viable product (MVP) to the world.
+    1. People like it! You notice they're asking for more features. 🙌
+1. Project Growth
+    1. You add a new view. It uses the same data object as the previous view.
+    1. Duplicating the same data object is a bad idea. So you create a folder called **`Data Objects`** and put it in its own file.
+    1. Now both views and observable objects are using the same data object.
+
+The idea is you use your judgment on how you want to break it out and organize it.
+
+Let's look at a different scenario.
+
+## Grow With Your Project - Example 2
+1. You decide to structure your project so the view, observable object, and data object are in separate files but all in the same folder so you can more easily work with all the related parts:
+
+![image](https://user-images.githubusercontent.com/24855856/126025690-03238e87-898d-4a7a-bdf0-14475946dc0d.png)
+
+2. Later, you find out that the BookDO (Book data object) can be reused in another view. 
+3. So you create a **`CommonDataObjects`** folder and move `BooksDO.swift` into it.
+
+The choice is yours.
+
 ------------
 # Resources
 ### Working with Data in SwiftUI
