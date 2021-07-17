@@ -92,10 +92,12 @@ If this is not happening, then your architecture has failed.
 * Be flexible
 * Be as simple or as complicated as you need
 * Have fewer rules
-* Allow the developer to use their judgment
-* Grow with your project. Let's talk about that...
+* Allow the developer to **use their judgment**
+* Grow with your project. 
 
-## Grow With Your Project - Example 1
+Let's talk about that last point...
+
+### Grow With Your Project - Example 1
 1. Minimum Viable Project
     1. Maybe you used that Xcode file template below and your view, observable object, and data object are in one file. Simple.
     1. You present your minimum viable product (MVP) to the world.
@@ -109,7 +111,7 @@ The idea is you use your judgment on how you want to break it out and organize i
 
 Let's look at a different scenario.
 
-## Grow With Your Project - Example 2
+### Grow With Your Project - Example 2
 1. You decide to structure your project so the view, observable object, and data object are in separate files but all in the same folder so you can more easily work with all the related parts:
 
 ![image](https://user-images.githubusercontent.com/24855856/126025690-03238e87-898d-4a7a-bdf0-14475946dc0d.png)
@@ -134,5 +136,10 @@ Learn more about this architecture and working with data in the book **Working w
 ![xcode file template](https://user-images.githubusercontent.com/24855856/125811407-ebf6e72f-ee03-4afd-9b46-992ea81202f6.png)
 
 This file template will create all 3 objects when you add a new SwiftUI view to your project.
-(Note: All 3 objects will be in one file. Delete what you don't need and separate out what you want.)
+
 [Download Here](https://github.com/bigmountainstudio/VOODOFileTemplate)
+
+Note: All 3 objects will be in one file. 
+This is meant to be a STARTING POINT.
+Delete what you don't need and separate out what you want OR keep everything in one file. 
+### Remember, YOU are in control.
