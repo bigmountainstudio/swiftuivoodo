@@ -88,6 +88,6 @@ Learn more about this architecture and working with data in the book **Working w
 ### Xcode File Template
 ![xcode file template](https://user-images.githubusercontent.com/24855856/125811407-ebf6e72f-ee03-4afd-9b46-992ea81202f6.png)
 
-This file template will create all 3 classes when you add a new SwiftUI view to your project.
+This file template will create all 3 objects when you add a new SwiftUI view to your project.
 (Note: All 3 objects will be in one file. Delete what you don't need and separate out what you want.)
 [Download Here](https://github.com/bigmountainstudio/VOODOFileTemplate)
