@@ -75,7 +75,9 @@ struct DataObject: Identifiable {
 ![preview](https://user-images.githubusercontent.com/24855856/125803759-38e60661-f754-48dc-8b29-ecae855c0e74.png)
 
 # Important Notes
-### You are in control!
+## You are in control!
+![in control](https://user-images.githubusercontent.com/24855856/126043468-d2607fdc-cb57-4282-9592-a1af524c29fd.jpeg)
+
 * You decide on the naming convention you want to use.
     * You can update the Xcode file template below to fit your needs.
 * You decide how simple or how complex this needs to be.
@@ -83,11 +85,11 @@ struct DataObject: Identifiable {
     * Want to put the observable object and view in the same file? Go for it!
     * Want all 3 in separate files but the same folder? Why not?
 
-### How is this different from other architectures?
+## How is this different from other architectures?
 The goal of architecture is to make your life (or your team's life) easier.
 If this is not happening, then your architecture has failed.
 
-#### This architecture is meant to:
+### This architecture is meant to:
 * Provide a starting point
 * Be flexible
 * Be as simple or as complicated as you need
@@ -107,19 +109,40 @@ Let's talk about that last point...
     1. Duplicating the same data object is a bad idea. So you create a folder called **`Data Objects`** and put it in its own file.
     1. Now both views and observable objects are using the same data object.
 
-The idea is you use your judgment on how you want to break it out and organize it.
+The idea is you **use your judgment** on how you want to break it out and organize it.
+
+![swiftui voodo architecture growth example 1](https://user-images.githubusercontent.com/24855856/126044175-ee822d8a-931e-49f4-b056-63096926739d.png)
+
 
 Let's look at a different scenario.
 
 ### Grow With Your Project - Example 2
-1. You decide to structure your project so the view, observable object, and data object are in separate files but all in the same folder so you can more easily work with all the related parts:
+1. You decide to structure your project so the view, observable object, and data object are in separate files but all in the same folder so you can more easily work with all the related parts.
+2. Later, you find out that the `MainDO` (Main data object) can be reused in another view. 
+3. So you create a **`CommonDataObjects`** folder and move `MainDO.swift` into it.
 
-![image](https://user-images.githubusercontent.com/24855856/126025690-03238e87-898d-4a7a-bdf0-14475946dc0d.png)
+![swiftui voodo architecture growth example 2](https://user-images.githubusercontent.com/24855856/126044355-f5b05c72-c921-43f4-881f-15a237020ed4.png)
 
-2. Later, you find out that the BookDO (Book data object) can be reused in another view. 
-3. So you create a **`CommonDataObjects`** folder and move `BooksDO.swift` into it.
+The choice is yours. **You are in control!**
 
-The choice is yours.
+### Separate Folders
+You can also start your project with a traditional separation of parts with separate folders:
+
+![swiftui voodo architecture growth example 3](https://user-images.githubusercontent.com/24855856/126044212-eabde7b9-7353-4995-ba5b-d01ba11304ba.png)
+
+In this scenario, Settings doesn't need a data object so one isn't created.
+
+Remember the goal of architecture: **To make your life easier.**
+Do what you have to with your architecture to keep making your life easier, not harder.
+
+
+------------
+# Iterate Architecture Organization
+Pick one VOODO folder/file strategy and try it. I would suggest picking what you think is the simplest one for yourself.
+
+After a while, if you find yourself taking a long time moving between parts or having a hard time finding objects, then reorganize and simplify to make your life easier.
+
+That is the goal of architecture: **To make your life easier.**
 
 ------------
 # Resources
