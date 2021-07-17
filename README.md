@@ -125,7 +125,7 @@ Let's look at a different scenario.
 
 The choice is yours. **You are in control!**
 
-### Separate Folders
+### Separate Folders Option
 You can also start your project with a traditional separation of parts with separate folders:
 
 ![swiftui voodo architecture growth example 3](https://user-images.githubusercontent.com/24855856/126044212-eabde7b9-7353-4995-ba5b-d01ba11304ba.png)
@@ -133,7 +133,10 @@ You can also start your project with a traditional separation of parts with sepa
 In this scenario, Settings doesn't need a data object so one isn't created.
 
 Remember the goal of architecture: **To make your life easier.**
+
 Do what you have to with your architecture to keep making your life easier, not harder.
+
+You are in control. Use your judgment.
 
 
 ------------
