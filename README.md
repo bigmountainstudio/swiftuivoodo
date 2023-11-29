@@ -4,22 +4,22 @@
 # Simply Separated
 There are only 3 parts:
 1. View
-2. ObservableObject
-3. DataObject
+2. Observable Object
+3. Data Object
 
 Not all are required.
-And you can expand beyond these 3 for your apps needs.
+And you can expand beyond these 3 for your app's needs.
 Strive for simplicity.
 
 # V is for View
 This is your SwiftUI view.
 * It may or may not show any data.
 * In SwiftUI, if you want to change the way your view looks, you will have to change some data.
-* Data can be within the view. Data can be within an ObservableObject.
+* Data can be within the view. Data can be within an Observable object.
 
 
-# OO is for Observable Object
-This is a class that inherits from ObservableObject.
+# OO is for Observable object
+This is a class that uses the @Observable macro.
 * It can be used to notify your view when data values change.
 * When data changes, your view will update.
 * Data can be simple, like a string or int. Data can also be an object, like a struct.
@@ -27,9 +27,9 @@ This is a class that inherits from ObservableObject.
 
 # DO is for Data Object
 This is usually a struct that holds data.
-* You can have one data object in your ObservableObject.
-* You can have an array of data objects in your ObservableObject.
-* Your ObservableObject can send data objects to your view to be displayed.
+* You can have one data object in your Observable object.
+* You can have an array of data objects in your Observable object.
+* Your Observable can send data objects to your view to be displayed.
 
 ------------
 
@@ -37,13 +37,13 @@ This is usually a struct that holds data.
 ### View
 ```swift
 struct SettingsView: View {
-    @StateObject private var oo = SettingsOO()
+    @State private var oo = SettingsOO()
     
     var body: some View {
         List(oo.data) { datum in
             Text(datum.name)
         }
-        .onAppear {
+        .task {
             oo.fetch()
         }
     }
@@ -52,8 +52,11 @@ struct SettingsView: View {
 
 ### Observable Object
 ```swift
-class SettingsOO: ObservableObject {
-    @Published var data: [DataObject] = []
+import Observation
+
+@Observable
+class SettingsOO {
+    var data: [DataObject] = []
     
     func fetch() {
         data = [DataObject(name: "Datum 1"),
@@ -83,7 +86,7 @@ struct DataObject: Identifiable {
 * You decide how simple or how complex this needs to be.
     * Don't need the Data Object? Delete it!
     * Want to put the observable object and view in the same file? Go for it!
-    * Want all 3 in separate files but the same folder? Why not?
+    * Want all 3 in separate files but in the same folder? Why not?
 
 ## How is this different from other architectures?
 The goal of architecture is to make your life (or your team's life) easier.
@@ -152,7 +155,7 @@ That is the goal of architecture: **To make your life easier.**
 ### Working with Data in SwiftUI
 Learn more about this architecture and working with data in the book **Working with Data in SwiftUI**.
 
-![working with data in swiftui](https://user-images.githubusercontent.com/24855856/125804293-5f4ec808-220d-41a7-b1ce-9caebc06069e.png)
+![working with data in swiftui](https://github.com/bigmountainstudio/swiftuivoodo/assets/24855856/7df3d2e1-f49c-4a2a-8144-97837ee12fa6)
 
 [Learn More](https://www.bigmountainstudio.com/data)
 
@@ -163,7 +166,7 @@ Learn more about this architecture and working with data in the book **Working w
 
 This file template will create all 3 objects when you add a new SwiftUI view to your project.
 
-[Download Here](https://github.com/bigmountainstudio/VOODOFileTemplate)
+[Download Here](https://github.com/bigmountainstudio/VOODOFileTemplate2)
 
 Note: All 3 objects will be in one file. 
 This is meant to be a STARTING POINT.
