@@ -153,11 +153,12 @@ That is the goal of architecture: **To make your life easier.**
 ------------
 # Resources
 ### Working with Data in SwiftUI
-Learn more about this architecture and working with data in the book **Working with Data in SwiftUI**.
+Learn more about this architecture and working with data in the book **SwiftUI Essentials: Architecting Scalable and Maintainable Apps**.
 
-![working with data in swiftui](https://github.com/bigmountainstudio/swiftuivoodo/assets/24855856/7df3d2e1-f49c-4a2a-8144-97837ee12fa6)
+![swiftui essentials](https://github.com/bigmountainstudio/swiftuivoodo/assets/24855856/4d833993-add2-4754-bd2b-7ad6897537aa)
 
-[Learn More](https://www.bigmountainstudio.com/data)
+
+[Learn More](https://www.bigmountainstudio.com/essentials)
 
 
 
